@@ -58,19 +58,6 @@ let initialize = function () {
 
 window.addEventListener('load', initialize);
 
-/*
-// function ondragStart
-
-function onDragStart(event) {
-    event   
-        .dataTransfer
-        .setData('text/plain', event. target. id);    
-    event   
-        .currentTarget
-        .style
-        .color = 'yellow';
-    }
-*/
 
 /*let sroll = function() {
     let carousel = setInterval(function() {
@@ -84,18 +71,3 @@ function onDragStart(event) {
     );
 }
 
-
-
-window.addEventListener('load', sroll);*/
-
-function handleDragStart(e) {
-    this.style.opacity = '0.4';  // this / e.target is the source node.
-  }
-  
-  var cols = document.querySelectorAll('#columns .column');
-  [].forEach.call(cols, function(col) {
-    col.addEventListener('dragstart', handleDragStart, false);
-  });
-
-
-  
